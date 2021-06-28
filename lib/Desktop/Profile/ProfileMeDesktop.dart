@@ -98,6 +98,7 @@ class ProfileMeDesktop extends StatelessWidget {
                           child: Padding(
                             padding: const EdgeInsets.all(12),
                             child:Container(
+                              height: MediaQuery.of(context).size.height,
                                 width: MediaQuery.of(context).size.width*0.45,
                                 child:chartWidget,
                             ),

@@ -51,20 +51,24 @@ class _aboutMeMobileState extends State<aboutMeMobile> {
                 ],
               ),
             ),
-            Row(
-              crossAxisAlignment: CrossAxisAlignment.start,
-              children: [
-
-                Expanded(
-                  child: AboutSectionText(
-                    text:
-                    widget.myStore,
+            Container(
+              height: 650,
+              child: Column(
+                mainAxisAlignment: MainAxisAlignment.center,
+                children: [
+                  Expanded(
+                    child: AboutSectionText(
+                      text:
+                      widget.myStore,
+                    ),
                   ),
-                ),
-                ExperienceCard(numOfExp: widget.myYears.toString(),sizeWidth: 150,sizeText: 60,textTitle: "Years of Experience",),
+                  Container(
+
+                      child: ExperienceCard(numOfExp: widget.myYears.toString(),sizeWidth: 150,sizeText: 60,textTitle: "Years of Experience",)),
 
 
-              ],
+                ],
+              ),
             ),
           ],
         ),
